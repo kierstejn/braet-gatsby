@@ -1,0 +1,16 @@
+.Container {
+    margin: 0;
+}
+
+.InnerDiv {
+    background-color: white;
+}
+
+@media (min-width: 600px) {
+    .Container {
+        margin: 18px;
+    }
+}
+
+
+
