@@ -1,6 +1,9 @@
 backend:
-  name: git-gateway
-  branch: master
+  name: github
+  repo: kierstejn/braet-gatsby
+  
+site_url: https://wizardly-stonebraker-36baaa.netlify.com
+display_url: https://wizardly-stonebraker-36baaa.netlify.com
 media_folder: static/assets
 public_folder: assets
 collections:
