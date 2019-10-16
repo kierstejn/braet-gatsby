@@ -2,7 +2,7 @@ backend:
   name: git-gateway
   branch: master
 
-api_root: https://wizardly-stonebraker-36baaa.netlify.com
+site_url: https://wizardly-stonebraker-36baaa.netlify.com
 media_folder: static/img
 public_folder: /img
 
