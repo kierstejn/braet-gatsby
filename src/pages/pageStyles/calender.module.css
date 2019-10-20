@@ -1,0 +1,12 @@
+.EventList {
+   width: 90%; 
+   margin-bottom: 3em;
+   margin: auto;
+}
+
+@media (min-width: 599px) {
+    .EventList {
+        margin-top: 3em;
+        width: 60%;
+    }
+}

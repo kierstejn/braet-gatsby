@@ -11,9 +11,17 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `blog`,
-        path: `${__dirname}/content/blog`,
+        name: `events`,
+        path: `${__dirname}/content/events`,
       },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Libre Baskerville', 'Roboto']
+        }
+      }
     },
     ],
   

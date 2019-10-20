@@ -1,6 +1,6 @@
 .DrawerToggle {
     width: 52px;
-    height: 100%;
+    height: 40px;
     display: flex;
     padding: 5px;
     box-sizing: border-box;
@@ -57,7 +57,7 @@
     opacity: 1;
 }
 
-@media (min-width: 599px) {
+@media (min-width: 600px) {
     .DrawerToggle {
         display: none;
     }

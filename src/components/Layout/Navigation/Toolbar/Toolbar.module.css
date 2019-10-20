@@ -1,7 +1,7 @@
 .Toolbar {
     height: 150px;
     width: 100%;
-    margin: 0 auto;
+    margin: 0;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -19,20 +19,32 @@
     align-items: flex-end;
 }
 
-
 .Toolbar nav {
     height: 100%;
 }
 
 .Toolbar__Image {
-    max-width: 140px;
+    max-width: 200px;
     font-size: 55px;
     height: auto;
     color: white;
 }
 
-.NavigationItems {
+.Toolbar__Image h2 {
+    font-size: 55px;
+    padding: 0;
+    margin: 0;
+}
 
+.Toolbar__Image p {
+    font-size: 15px;
+    margin: 0;
+    margin-left: 20px;
+    font-family: 'Libre Baskerville';
+}
+
+.DrawerToggle {
+    display: none;
 }
 
 @media (max-width: 599px) {
@@ -48,10 +60,14 @@
 
     .Toolbar {
         background-color: white;
-        height: 80px;
+        height: 120px;
         padding: 20px 20px;
         justify-content: space-between;
         align-items: center;
+    }
+    
+    .DrawerToggle {
+        display: block
     }
 }
 

@@ -3,6 +3,7 @@ import Footer from './Navigation/Footer/Footer';
 import './Layout.css';
 import Toolbar from './Navigation/Toolbar/Toolbar'
 import SideDrawer from './Navigation/SideDrawer/SideDrawer';
+import { minWidth } from '@material-ui/system';
 
 
 class Layout extends Component {
@@ -28,7 +29,8 @@ class Layout extends Component {
         let layoutStyle = {
             display: 'grid',
             gridTemplateRows: '150px 1fr minmax(200px, auto)',
-            minHeight:'100vh'
+            minHeight:'100vh',
+            minWidth: '100vw'
         };
 
         let toolbarStyle = {
@@ -48,7 +50,7 @@ class Layout extends Component {
         return (
 
 
-                <div className={"Container"} style={layoutStyle}>
+                <div className={"OuterDiv"} style={layoutStyle}>
                     <div style={toolbarStyle}>
                         <Toolbar
                             open={this.state.showSideDrawer}
