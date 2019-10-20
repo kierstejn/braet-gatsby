@@ -2,7 +2,7 @@ import React, {Fragment} from 'react';
 
 import NavigationItems from '../NavigationItems/NavigationItems';
 import * as styles from './SideDrawer.module.css';
-import Backdrop from '../../../shared/Backdrop/Backdrop';
+import Backdrop from '../../../components/shared/Backdrop/Backdrop';
 
 const sideDrawer = ( props ) => {
     let attachedClasses = [styles.SideDrawer, styles.Close];

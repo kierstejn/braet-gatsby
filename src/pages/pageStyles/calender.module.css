@@ -7,6 +7,13 @@
 @media (min-width: 599px) {
     .EventList {
         margin-top: 3em;
-        width: 60%;
+        width: 500px;
+    }
+}
+
+@media (min-width: 999px) {
+    .EventList {
+        margin-top: 3em;
+        width: 800px;
     }
 }

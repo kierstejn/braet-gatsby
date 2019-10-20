@@ -1,5 +1,4 @@
 import React from "react"
-import Layout from '../components/Layout/Layout';
 import EventList from '../components/EventList/EventList';
 
 import * as styles from './pageStyles/calender.module.css';
@@ -19,11 +18,9 @@ const calender = ( props ) => {
         }
     })
     return (
-        <Layout>
-            <div className={styles.EventList}>
-                <EventList events={events}/>
-            </div>
-        </Layout>
+        <div className={styles.EventList}>
+            <EventList events={events}/>
+        </div>
     )
 };
 
