@@ -6,10 +6,10 @@ import SideDrawer from './Navigation/SideDrawer/SideDrawer';
 import { minWidth } from '@material-ui/system';
 
 
-class Layout extends Component {
+class index extends Component {
 
     state = {
-        showSideDrawer: true
+        showSideDrawer: false
     };
 
     sideDrawerClosedHandler = () => {
@@ -48,8 +48,6 @@ class Layout extends Component {
         };
 
         return (
-
-
                 <div className={"OuterDiv"} style={layoutStyle}>
                     <div style={toolbarStyle}>
                         <Toolbar
@@ -72,4 +70,4 @@ class Layout extends Component {
 
 
 
-export default Layout;
+export default index;
