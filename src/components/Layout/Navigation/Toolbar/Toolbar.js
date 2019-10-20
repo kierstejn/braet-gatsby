@@ -7,11 +7,16 @@ import DrawerToggle from '../DrawerToggle/DrawerToggle';
 
 const toolbar = ( props ) => (
     <header className={styles.Toolbar}>
-            <h2 className={styles.Toolbar__Image}>Braet</h2>
+			<div className={styles.Toolbar__Image}>
+				<h2>Braet</h2>
+				<p>- Vin, Kaffe og Brætspil</p>
+			</div>
 			<nav className={styles.NavigationItems}>
 				<NavigationItems/>
 			</nav>
-			<DrawerToggle onClick={props.drawerToggleClicked} open={props.open}/>
+			<div className={styles.DrawerToggle}>
+				<DrawerToggle onClick={props.drawerToggleClicked} open={props.open}/>
+			</div>
     </header>
 );
 

@@ -16,8 +16,8 @@ const sideDrawer = ( props ) => {
             <div className={styles.BackDrop}>
 			    {backdrop}
 			</div>
-            <div className={attachedClasses.join(' ')}>
-                <nav onClick={props.drawerToggleClicked}>
+            <div className={attachedClasses.join(' ')} onClick={props.drawerToggleClicked} >
+                <nav>
                     <NavigationItems isAuthenticated={props.isAuthenticated} />
                 </nav>
             </div>

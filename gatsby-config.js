@@ -5,5 +5,24 @@
  */
 
 module.exports = {
-  plugins: [`gatsby-plugin-netlify-cms`],
+  plugins: [
+    `gatsby-plugin-netlify-cms`,
+    `gatsby-transformer-remark`,
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `events`,
+        path: `${__dirname}/content/events`,
+      },
+    },
+    {
+      resolve: 'gatsby-plugin-web-font-loader',
+      options: {
+        google: {
+          families: ['Libre Baskerville', 'Roboto']
+        }
+      }
+    },
+    ],
+  
 }
