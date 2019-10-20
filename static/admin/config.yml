@@ -9,11 +9,11 @@ public_folder: /img
 collections:
   - name: "event"
     label: "Event"
-    folder: "content/event"
+    folder: "content/events"
     create: true
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
       - { label: "StartTime", name: "starttime", widget: "datetime" }
-      - { label: "EndTime", name: "endtime", widget: "datetime" }
+      - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
       - { label: "Link", name: "link", widget: "string", required: false}

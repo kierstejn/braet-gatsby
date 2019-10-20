@@ -12,7 +12,10 @@ const calender = ( props ) => {
         return {
             "title": item.node.frontmatter.title,
             "date": item.node.frontmatter.date,
-            "time": item.node.frontmatter.time,
+            "starttime": item.node.frontmatter.starttime,
+            "endtime": item.node.frontmatter.endtime,
+            "link": item.node.frontmatter.link
+            
         }
     })
     return (
@@ -30,10 +33,12 @@ export const eventsQuery = graphql`
         edges {
             node {
             frontmatter {
-                date: date(formatString: "DD. MMM", locale: "da")
-        	    time: date(formatString: "HH:mm", locale: "da")
+                date: starttime(formatString: "DD. MMM", locale: "da")
+                starttime: starttime(formatString: "HH:mm", locale: "da")
+                endtime: endtime(formatString: "HH:mm", locale: "da")
+                link
                 title
-                }
+            }
             }
         }
         }

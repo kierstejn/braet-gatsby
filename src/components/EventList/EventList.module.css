@@ -31,10 +31,11 @@
     display: flex;
     flex-direction: row;
     flex-wrap: unset;
+    margin-top: 0.1em;
 }
 
-.EventItemLink {
-    
+.EventTable {
+    margin-left: 1em;
 }
 
 .Seperator {

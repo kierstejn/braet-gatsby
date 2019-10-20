@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Fragment } from 'react';
 import { graphql } from "gatsby";
 import { Card } from '@material-ui/core';
 import Moment from 'react-moment';
@@ -24,11 +24,20 @@ const eventlist = (props) => {
                                 <p>{item.title}</p>
                                 <div className={styles.EventItemMoreInfo}>
                                     <div style={{marginRight: "10px"}}>
-                                        <strong>
-                                            {item.time}
-                                        </strong>
+                                        <span>{item.starttime}</span>
+                                        {item.endtime ? 
+                                            <Fragment>
+                                                <span>-</span>
+                                                <span>{item.endtime}</span>
+                                            </Fragment>
+                                            : null
+                                        }
+                                        
                                     </div>
-                                    <a className={styles.EventItemLink} href="url">Mere info</a>
+                                    {item.link ? 
+                                        <a className={styles.EventItemLink} href={item.link}>Mere info</a>
+                                        : null
+                                    }
                                 </div>
                             </div>
                         </div>
