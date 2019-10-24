@@ -19,11 +19,12 @@ collections:
       - { label: "Link", name: "link", widget: "string", required: false}
   - name: "menu"
     label: "Menu"
-    folder: "content/menu"
+    folder: "data/menu"
     create: true
+    extension: json
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
       - { label: "Title", name: "title", widget: "string" }
-      - { label: "StartTime", name: "starttime", widget: "datetime" }
-      - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
-      - { label: "Link", name: "link", widget: "string", required: false}
+      - { label: "StartTime", name: "starttimehh", widget: "datetime" }
+      - { label: "EndTime", name: "endtimehh", widget: "datetime", required: false}
+      - { label: "Link", name: "linkhh", widget: "string", required: false}
