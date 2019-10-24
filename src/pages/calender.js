@@ -27,17 +27,17 @@ const calender = ( props ) => {
 export const eventsQuery = graphql`
     query MyQuery {
         allMarkdownRemark {
-        edges {
-            node {
-            frontmatter {
-                date: starttime(formatString: "DD. MMM", locale: "da")
-                starttime: starttime(formatString: "HH:mm", locale: "da")
-                endtime: endtime(formatString: "HH:mm", locale: "da")
-                link
-                title
+            edges {
+                node {
+                    frontmatter {
+                        date: starttime(formatString: "DD. MMM", locale: "da")
+                        starttime: starttime(formatString: "HH:mm", locale: "da")
+                        endtime: endtime(formatString: "HH:mm", locale: "da")
+                        link
+                        title
+                    }
+                }
             }
-            }
-        }
         }
     }
     `
