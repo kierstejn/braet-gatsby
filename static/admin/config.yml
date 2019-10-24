@@ -17,3 +17,13 @@ collections:
       - { label: "StartTime", name: "starttime", widget: "datetime" }
       - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
       - { label: "Link", name: "link", widget: "string", required: false}
+  - name: "menu"
+    label: "Menu"
+    folder: "content/menu"
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "StartTime", name: "starttime", widget: "datetime" }
+      - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
+      - { label: "Link", name: "link", widget: "string", required: false}

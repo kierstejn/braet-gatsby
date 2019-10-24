@@ -15,6 +15,14 @@ module.exports = {
         name: `events`,
         path: `${__dirname}/content/events`,
       },
+      
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `menu`,
+        path: `${__dirname}/content/menu`,
+      },
     },
     {
       resolve: 'gatsby-plugin-web-font-loader',
