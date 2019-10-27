@@ -1,5 +1,5 @@
 import React from 'react';
-import './Footer.css'
+import * as styles from './Footer.module.css'
 
 const footer = () => {
 
@@ -9,8 +9,15 @@ const footer = () => {
     };
 
     return (
-        <footer className={"Footer"} style={footerStyle}>
-            Det her er en footer
+        <footer className={styles.Footer} style={footerStyle}>
+            <div className={styles.FirstColumn}>
+                <div className={styles.TextArea}>
+                    dfsdfssffsdfdsfsd
+                </div>
+            </div>
+            <div className={styles.SecondColumn}>
+
+            </div>
         </footer>
     )
 };

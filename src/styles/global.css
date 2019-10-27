@@ -5,6 +5,12 @@ html {
     font-family: 'Libre Baskerville', sans-serif
 }
 
+body {
+    /* overflow: hidden;
+    overflow-y: scroll; */
+    margin: 0;
+}
+
 p {
     font-family: 'Roboto';
     margin: 0;

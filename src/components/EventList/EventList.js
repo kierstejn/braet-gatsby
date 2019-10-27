@@ -14,9 +14,9 @@ const eventlist = (props) => {
         <div className={styles.EventList}>
             <h2 className={styles.EventListHeader}>Events:</h2>
             <div className={styles.EventTable}>
-                {events.length > 0 ? events.map(item => {
+                {events.length > 0 ? events.map((item, index) => {
                     return (
-                        <div className={styles.EventItem}>
+                        <div key={index} className={styles.EventItem}>
                             <div className={styles.EventItemDate}>
                                 <span>{item.date}</span>
                             </div>

@@ -3,17 +3,20 @@ import EventList from '../components/EventList/EventList';
 
 import * as styles from './pageStyles/calender.module.css';
 
-const calender = ( props ) => {
+const calender = ({data, pageContext}) => {
 
-    const {data} = props;
+    
+    
+    console.log(data)
+    console.log(pageContext)
     let events = [];
-    events = props.data && props.data.allMarkdownRemark.edges.map(item => {
+    events = data.allEventsJson && data.allEventsJson.edges.map(item => {
         return {
-            "title": item.node.frontmatter.title,
-            "date": item.node.frontmatter.date,
-            "starttime": item.node.frontmatter.starttime,
-            "endtime": item.node.frontmatter.endtime,
-            "link": item.node.frontmatter.link
+            "title": item.node.title,
+            "date": item.node.date,
+            "starttime": item.node.starttime,
+            "endtime": item.node.endtime,
+            "link": item.node.link
             
         }
     })
@@ -25,19 +28,25 @@ const calender = ( props ) => {
 };
 
 export const eventsQuery = graphql`
-    query MyQuery {
-        allMarkdownRemark {
+    query MyQuery($currentDate: Float) {
+        allEventsJson(
+            filter: {
+                starttimestamp: {gte: $currentDate}
+            }
+            sort: {
+                fields: [starttime]
+                order: DESC
+            }
+            ) {
             edges {
                 node {
-                    frontmatter {
+                        title
+                        link
                         date: starttime(formatString: "DD. MMM", locale: "da")
                         starttime: starttime(formatString: "HH:mm", locale: "da")
                         endtime: endtime(formatString: "HH:mm", locale: "da")
-                        link
-                        title
                     }
                 }
-            }
         }
     }
     `

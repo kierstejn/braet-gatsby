@@ -9,19 +9,11 @@ module.exports = {
     `gatsby-plugin-layout`,
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
+    `gatsby-transformer-json`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `events`,
-        path: `${__dirname}/content/events`,
-      },
-      
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        name: `menu`,
-        path: `${__dirname}/content/menu`,
+        path: `${__dirname}/data/`,
       },
     },
     {

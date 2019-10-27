@@ -2,29 +2,19 @@ backend:
   name: git-gateway
   branch: master
 
-site_url: https://wizardly-stonebraker-36baaa.netlify.com
+#site_url: https://wizardly-stonebraker-36baaa.netlify.com
 media_folder: static/img
 public_folder: /img
 
 collections:
   - name: "event"
     label: "Event"
-    folder: "content/events"
-    create: true
-    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
-    fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "StartTime", name: "starttime", widget: "datetime" }
-      - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
-      - { label: "Link", name: "link", widget: "string", required: false}
-  - name: "menu"
-    label: "Menu"
-    folder: "data/menu"
+    folder: "data/events"
     create: true
     extension: json
     slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
     fields:
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "StartTime", name: "starttimehh", widget: "datetime" }
-      - { label: "EndTime", name: "endtimehh", widget: "datetime", required: false}
-      - { label: "Link", name: "linkhh", widget: "string", required: false}
+      - { label: "Title", name: "title", widget: "string"}
+      - { label: "StartTime", name: "starttime", widget: "datetime"}
+      - { label: "EndTime", name: "endtime", widget: "datetime", required: false}
+      - { label: "Link", name: "link", widget: "string", required: false}

@@ -30,7 +30,8 @@ class index extends Component {
             display: 'grid',
             gridTemplateRows: '150px 1fr minmax(200px, auto)',
             minHeight:'100vh',
-            minWidth: '100vw'
+            
+           
         };
 
         let toolbarStyle = {
@@ -40,6 +41,8 @@ class index extends Component {
 
         let contentStyle = {
             gridRow: 2,
+            marginTop: "20px",
+            marginBottom: "40px"
 
         };
 

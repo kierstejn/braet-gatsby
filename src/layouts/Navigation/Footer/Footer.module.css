@@ -1,0 +1,26 @@
+.Footer {
+    background-color: rgb(164, 199, 177);
+    height: 100%;
+    width: 100%;
+    min-height: 300px;
+    grid-area: footer;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.FirstColumn {
+    flex: 1 1 auto;
+    min-width: 300px;
+    background-color: aquamarine;
+}
+
+.SecondColumn {
+    flex: 1 1 auto;
+    min-width: 300px;
+    background-color: red;
+}
+
+.TextArea {
+    margin: 20px;
+    background-color: saddlebrown;
+}
