@@ -6,7 +6,7 @@ import * as styles from './NavigationItem.module.css';
 const navigationItem = ( props ) => (
     <li className={styles.NavigationItem}>
 		  <Link to={props.link}>
-        <div>{props.children}</div>
+        <h2>{props.children}</h2>
       </Link>
     </li>
 );

@@ -2,25 +2,95 @@
     background-color: rgb(164, 199, 177);
     height: 100%;
     width: 100%;
-    min-height: 300px;
     grid-area: footer;
     display: flex;
     flex-wrap: wrap;
 }
 
 .FirstColumn {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     min-width: 300px;
-    background-color: aquamarine;
+    width: 100%;
+    padding: 30px;
+    background-color: #CBD2D0;
 }
 
 .SecondColumn {
-    flex: 1 1 auto;
+    flex: 1 1 0;
     min-width: 300px;
-    background-color: red;
+    padding: 30px;
+    background-color: #CBD2D0;
 }
 
 .TextArea {
-    margin: 20px;
-    background-color: saddlebrown;
+    max-width: 70%;
+    margin-top: 20px;
+    color: #272727;
+}
+.TextArea p {
+    font-size: small;
+    letter-spacing: 0.05em;
+    word-spacing: 0.08em;
+    font-family: 'Roboto';
+    
+}
+
+.InputElement {
+    outline: none;
+    border: 2px solid #eee;
+    background-color: white;
+    font: inherit;
+    padding: 6px 10px;
+    width: calc(100% - 140px);
+    box-sizing: border-box;
+    height: 50px;
+}
+
+.InputElement:focus {
+    outline: none;
+}
+
+.InputElement::placeholder {
+    font-size: small;
+}
+
+.EmailForm {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.EmailForm p {
+    font-family: 'Libre Baskerville', sans-serif;
+    font-size: small;
+}
+
+.EmailHeader {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #272727;
+}
+
+.Button {
+    outline: none;
+    border: 1px solid rgba(0,0,0,.12);
+    font: inherit;
+    margin-left: 20px;
+    width: 120px;
+    height: 50px;
+    vertical-align: middle;
+    background-color: #272727;
+    color: azure;
+    transition: ease-in 0.2s;
+}
+
+.Button:hover {
+    opacity: 0.7;
+    cursor: pointer;
+}
+
+.Divider {
+    background-color: #272727;
+    border: none;
+    height: 1px;
 }

@@ -12,7 +12,7 @@ const eventlist = (props) => {
     const {events} = props;
     return (
         <div className={styles.EventList}>
-            <h2 className={styles.EventListHeader}>Events:</h2>
+            <h2 className={styles.EventListHeader}>Events</h2>
             <div className={styles.EventTable}>
                 {events.length > 0 ? events.map((item, index) => {
                     return (

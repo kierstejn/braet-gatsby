@@ -1,3 +1,13 @@
+@font-face {
+    font-family: "Skinny bold";
+    src: url("./fonts/TheSkinny-bold.otf");
+}
+
+@font-face {
+    font-family: "Skinny";
+    src: url("./fonts/TheSkinny.otf");
+}
+
 html {
     background-color: white;
     margin: 0;

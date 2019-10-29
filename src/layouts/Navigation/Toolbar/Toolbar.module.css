@@ -33,7 +33,9 @@
 .Toolbar__Image h2 {
     font-size: 55px;
     padding: 0;
-    margin: 0;
+    margin-bottom: 8px;
+    font-family: 'Skinny';
+    letter-spacing: 0.2em;
 }
 
 .Toolbar__Image p {
@@ -41,6 +43,7 @@
     margin: 0;
     margin-left: 20px;
     font-family: 'Libre Baskerville';
+    letter-spacing: 0;
 }
 
 .DrawerToggle {

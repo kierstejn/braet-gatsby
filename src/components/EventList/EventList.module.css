@@ -14,8 +14,10 @@
 }
 
 .EventListHeader {
-    text-decoration: underline;
+    
     margin-bottom: 1em;
+    font-family: "Skinny";
+    letter-spacing: 0.1em;
 }
 
 .EventItem p {
