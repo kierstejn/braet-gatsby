@@ -10,9 +10,18 @@ const eventlist = (props) => {
    
 
     const {events} = props;
+
+    const filteredEventList = events.filter((item) => 
+    {   
+        console.log(new Date(item.date))
+        return Date(item.date) > Date.now()
+    })
+    console.log(events)
+    
+    console.log(Date.now())
     return (
         <div className={styles.EventList}>
-            <h2 className={styles.EventListHeader}>Events</h2>
+            <h2 className={styles.EventListHeader}>EVENTS</h2>
             <div className={styles.EventTable}>
                 {events.length > 0 ? events.map((item, index) => {
                     return (

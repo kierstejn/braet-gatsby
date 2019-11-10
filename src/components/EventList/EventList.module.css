@@ -7,6 +7,7 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
+    justify-self: center;
 }
 
 .EventTable div {
@@ -14,15 +15,11 @@
 }
 
 .EventListHeader {
-    
+    text-align: center;
     margin-bottom: 1em;
-    font-family: "Skinny";
-    letter-spacing: 0.1em;
+    text-decoration-style: inherit;
 }
 
-.EventItem p {
-    font-family: 'Libre Baskerville'
-}
 
 .EventItemDate {
     margin-right: 20px;

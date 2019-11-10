@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'gatsby'
 
 import * as styles from './Toolbar.module.css';
 import NavigationItems from '../NavigationItems/NavigationItems';
@@ -8,8 +9,9 @@ import DrawerToggle from '../DrawerToggle/DrawerToggle';
 const toolbar = ( props ) => (
     <header className={styles.Toolbar}>
 			<div className={styles.Toolbar__Image}>
-				<h2>Braet</h2>
-				<p>- Vin, Kaffe og Brætspil</p>
+				<Link to={"/"}>
+					<h1>Breat</h1>
+				</Link>
 			</div>
 			<nav className={styles.NavigationItems}>
 				<NavigationItems/>

@@ -1,0 +1,46 @@
+.Header {
+    width: 60%;
+    max-width: 600px;
+    margin: 0 auto;
+    box-sizing: border-box;
+    margin-top: 2em;
+}
+
+
+.Image {
+    margin-top: 5em;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5em;
+}
+
+.Header h1 {
+    
+    font-weight: 500;
+    font-size: 40px;
+    font-family: 'Josefin slab';
+    
+    
+}
+
+.Header h3 {
+    font-family: 'Josefin slab';
+    font-size: 20px;
+    font-weight: 100;
+    margin-top: 1em;
+    
+}
+
+.Name {
+    font-family: 'Josefin slab';
+    font-weight: 700;
+}
+
+@media (max-width: 599px) {
+    .Header {
+        margin-top: 0;
+        width: 90%;
+    }
+    
+}

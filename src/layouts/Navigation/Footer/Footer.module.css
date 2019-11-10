@@ -29,10 +29,6 @@
 }
 .TextArea p {
     font-size: small;
-    letter-spacing: 0.05em;
-    word-spacing: 0.08em;
-    font-family: 'Roboto';
-    
 }
 
 .InputElement {
@@ -56,18 +52,23 @@
 
 .EmailForm {
     display: flex;
+    max-width: 400px;
     margin-top: 20px;
     margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .EmailForm p {
-    font-family: 'Libre Baskerville', sans-serif;
+    font-family: inherit;
     font-size: small;
 }
 
 .EmailHeader {
     text-align: center;
+    font-family: "Josefin slab";
     margin-bottom: 20px;
+    letter-spacing: 0;
     color: #272727;
 }
 
@@ -90,7 +91,8 @@
 }
 
 .Divider {
-    background-color: #272727;
+    background-color: #eee;
     border: none;
     height: 1px;
+    margin: 30px 0;
 }

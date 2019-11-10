@@ -1,12 +1,12 @@
 .EventList {
-   width: 80%; 
-   margin: auto;
+   width: fit-content; 
+   margin: 0 auto;
    
 }
 
 @media (min-width: 599px) {
     .EventList {
         margin-top: 3em;
-        width: fit-content;  
+          
     }
 }

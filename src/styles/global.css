@@ -8,11 +8,47 @@
     src: url("./fonts/TheSkinny.otf");
 }
 
+@font-face {
+    font-family: "BatonTurbo medium";
+    src: url("./fonts/BatonTurboTrial-Medium.otf");
+}
+
+@font-face {
+    font-family: "BatonTurbo";
+    src: url("./fonts/BatonTurboTrial-Regular.otf");
+}
+
+@font-face {
+    font-family: "Baton medium";
+    src: url("./fonts/BatonTrial-Medium.otf");
+}
+
+@font-face {
+    font-family: "Baton light";
+    src: url("./fonts/BatonTrial-Light.otf");
+}
+
+@font-face {
+    font-family: "Baton";
+    src: url("./fonts/BatonTrial-Regular.otf");
+}
+
+@font-face {
+    font-family: "Baton italic";
+    src: url("./fonts/BatonTrial-RegularItalic.otf");
+}
+
+@font-face {
+    font-family: "Baton light italic";
+    src: url("./fonts/BatonTrial-LightItalic.otf");
+}
+
+
 html {
     background-color: white;
     margin: 0;
     padding: 0;
-    font-family: 'Libre Baskerville', sans-serif
+    
 }
 
 body {
@@ -22,24 +58,37 @@ body {
 }
 
 p {
-    font-family: 'Roboto';
+    font-family: 'Josefin Slab', 'Sans serif';
     margin: 0;
     padding: 0;
 }
 
 h1 {
+    font-family: 'Skinny', 'Sans serif';
     margin: 0;
     padding: 0;
+    
+    letter-spacing: 0.1em;
 }
 
 h2 {
+    font-family: 'Skinny', 'Sans serif';
     margin: 0;
     padding: 0;
+   
+    letter-spacing: 0.2em;
+
 }
 
 h3 {
+    font-family: 'Josefin slab', 'Sans serif';
     margin: 0;
     padding: 0;
+    letter-spacing: 0.1em;
+}
+
+span {
+    font-family: 'Josefin Slab';
 }
 
 

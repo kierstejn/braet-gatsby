@@ -10,20 +10,24 @@ module.exports = {
     `gatsby-plugin-netlify-cms`,
     `gatsby-transformer-remark`,
     `gatsby-transformer-json`,
+    `gatsby-transformer-sharp`,
+    `gatsby-plugin-sharp`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         path: `${__dirname}/data/`,
       },
+     
     },
+    
     {
       resolve: 'gatsby-plugin-web-font-loader',
-      options: {
-        google: {
-          families: ['Libre Baskerville', 'Roboto']
+        options: {
+          google: {
+            families: ['Six Caps', 'Josefin Slab']
+          }
         }
-      }
-    },
+    }
     ],
   
 }

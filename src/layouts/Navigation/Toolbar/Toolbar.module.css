@@ -1,6 +1,6 @@
 .Toolbar {
     height: 150px;
-    width: 100%;
+    width: ;
     margin: 0;
     display: flex;
     flex-direction: row;
@@ -25,25 +25,23 @@
 
 .Toolbar__Image {
     max-width: 200px;
-    font-size: 55px;
-    height: auto;
-    color: white;
+    font-size: 55px
 }
 
-.Toolbar__Image h2 {
+.Toolbar__Image h1 {
     font-size: 55px;
     padding: 0;
     margin-bottom: 8px;
-    font-family: 'Skinny';
-    letter-spacing: 0.2em;
+    font-weight: 300;
+    color: white;
+    text-decoration-line: none;
 }
 
-.Toolbar__Image p {
-    font-size: 15px;
-    margin: 0;
-    margin-left: 20px;
-    font-family: 'Libre Baskerville';
-    letter-spacing: 0;
+.Toolbar__Image a {
+    text-decoration: none;
+    width: 100%;
+    box-sizing: border-box;
+   
 }
 
 .DrawerToggle {
@@ -55,10 +53,8 @@
         display: none;
     }
 
-    .Toolbar__Image {
+    .Toolbar__Image h1{
         color: black;
-        justify-self: left;
-        margin: 0;
     }
 
     .Toolbar {
@@ -70,7 +66,8 @@
     }
     
     .DrawerToggle {
-        display: block
+        display: block;
+        margin-bottom: 20px;
     }
 }
 

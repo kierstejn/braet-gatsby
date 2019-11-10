@@ -34,14 +34,15 @@ export const eventsQuery = graphql`
                 starttimestamp: {gte: $currentDate}
             }
             sort: {
-                fields: [starttime]
-                order: DESC
+                fields: [starttimestamp]
+                order: ASC
             }
             ) {
             edges {
                 node {
                         title
                         link
+
                         date: starttime(formatString: "DD. MMM", locale: "da")
                         starttime: starttime(formatString: "HH:mm", locale: "da")
                         endtime: endtime(formatString: "HH:mm", locale: "da")

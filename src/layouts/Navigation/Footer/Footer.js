@@ -12,7 +12,12 @@ const footer = () => {
     return (
         <footer className={styles.Footer} style={footerStyle}>
             <div className={styles.FirstColumn}>
-                <h2 className={styles.EmailHeader}>Nyheder fra braet</h2>
+           
+                <div className={styles.TextArea}>
+                    <p>Kom ind på Braet, Københavns nye Vin-, kaffe- og brætspilsbar med byttebibliotek, brugte vinyler og retrokjoler.</p>
+                </div>
+                <hr noshade className={styles.Divider}/>
+                <h2 className={styles.EmailHeader}>Nyheder fra breat</h2>
                 <div className={styles.EmailForm}>
                     <input
                         className={styles.InputElement}
@@ -28,10 +33,7 @@ const footer = () => {
                         <p>Tilmeld</p>
                     </button>
                 </div>
-                <hr noshade className={styles.Divider}/>
-                <div className={styles.TextArea}>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Tortor condimentum lacinia quis vel eros donec ac odio. Id venenatis a condimentum vitae. Ultrices mi tempus imperdiet nulla. </p>
-                </div>
+                
                 
             </div>
             <div className={styles.SecondColumn}>
