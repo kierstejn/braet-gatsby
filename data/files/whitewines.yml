@@ -1,1 +1,5 @@
-
+whitewines:
+  - bottleprice: 20
+    description: Også god
+    glassprice: 300
+    name: Hvidvin
