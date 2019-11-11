@@ -1,0 +1,6 @@
+wines:
+  - bottleprice: 400
+    description: God vin fra frankrig
+    glassprice: 33
+    name: Pinot noir
+    winetype: White

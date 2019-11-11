@@ -29,20 +29,21 @@ class Tabs extends Component {
 
     return (
       <div>
-        <ol className={styles.tabList}>
-          {children.map((child) => {
-            const { label } = child.props;
+        
+          <ol className={styles.tabList}>
+            {children.map((child) => {
+              const { label } = child.props;
 
-            return (
-              <Tab
-                activeTab={activeTab}
-                key={label}
-                label={label}
-                onClick={onClickTabItem}
-              />
-            );
-          })}
-        </ol>
+              return (
+                <Tab
+                  activeTab={activeTab}
+                  key={label}
+                  label={label}
+                  onClick={onClickTabItem}
+                />
+              );
+            })}
+          </ol>
         <div className={styles.Content}>
           {children.map((child) => {
             if (child.props.label !== activeTab) return undefined;

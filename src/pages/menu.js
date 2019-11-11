@@ -5,7 +5,10 @@ import WineItem from '../components/WineItem/WineItem';
 import MenuItemList from '../components/MenuItemList/MenuItemList';
 
 
-const menu = ( props ) => (
+const menu = ( {data} ) => {
+
+    console.log(data)
+    return (
     <div className={styles.Container}>
         <h2 className={styles.Header}>Menu</h2>
         <Tabs>
@@ -13,24 +16,97 @@ const menu = ( props ) => (
                 <p>Gode drikkevarer</p>
             </div>
             <div label={"Vin"}>
-                <MenuItemList 
-                    header={"RØD"}
-                >
-                    <WineItem 
-                        header={"Cabernet sauvignon"}
-                        description={"God vin med masser af fylde fddfdf fdfddfdf fddffdfd fddffdd fdfddfdf dffdfddf dffddffd dffddfdf dffddffd dfdfdf "}
-                        glassPrice={92}
-                        bottlePrice={200}
-                    />
-                    <WineItem 
-                        header={"Cabernet sauvignon"}
-                        description={"God vin med masser af fylde"}
-                        glassPrice={92}
-                    />
-                </MenuItemList>
+                {data.red.nodes.length !== 0 && 
+                    <MenuItemList 
+                        header={"RØD"}
+                    >
+                        {data.red.nodes[0].wines.map(item => {
+                            return (
+                                <WineItem 
+                                    header={item.name && item.name}
+                                    description={item.description && item.description}
+                                    glassPrice={item.glassprice && item.glassprice}
+                                    bottlePrice={item.bottleprice && item.bottleprice}
+                                />
+                            )
+                        })}
+                    </MenuItemList>
+                }
+                {data.white.nodes.length !== 0 && 
+                    <MenuItemList 
+                        header={"HVID"}
+                    >
+                        {data.white.nodes[0].wines.map(item => {
+                            return (
+                                <WineItem 
+                                    header={item.name && item.name}
+                                    description={item.description && item.description}
+                                    glassPrice={item.glassprice && item.glassprice}
+                                    bottlePrice={item.bottleprice && item.bottleprice}
+                                />
+                            )
+                        })}
+                    </MenuItemList>
+                }
+                {data.other.nodes.length !== 0 && 
+                    <MenuItemList 
+                        header={"ANDET"}
+                    >
+                        {data.other.nodes[0].wines.map(item => {
+                            return (
+                                <WineItem 
+                                    header={item.name && item.name}
+                                    description={item.description && item.description}
+                                    glassPrice={item.glassprice && item.glassprice}
+                                    bottlePrice={item.bottleprice && item.bottleprice}
+                                />
+                            )
+                        })}
+                    </MenuItemList>
+                }
             </div>
         </Tabs>
-    </div>
-);
+    </div>)
+};
+
+export const redWineQuery = graphql`
+    query redWineQueryery {
+        red: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "Red"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+            nodes {
+              wines {
+                bottleprice
+                description
+                glassprice
+                name
+                winetype
+              }
+            }
+          }
+          white: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "White"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+            nodes {
+              wines {
+                bottleprice
+                description
+                glassprice
+                name
+                winetype
+              }
+            }
+          }
+          other: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "Other"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+            nodes {
+              wines {
+                bottleprice
+                description
+                glassprice
+                name
+                winetype
+              }
+            }
+          }
+    }`
+
+
+
 
 export default menu;
