@@ -23,26 +23,26 @@ collections:
     delete: false
     
     files:
-      - label: Red wines
-        name: redwines
+      - label: "Red wines"
+        name: "redwines"
         file: "data/files/redwines.yml"
         widget: list
         fields:
-          - label: Red wines
-            name: red
+          - label: "Red wines"
+            name: "redwines"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
               - {label: Description, name: description, widget: string, required: false}
               - {label: Bottle price, name: bottleprice, widget: number, valueType: int}
               - {label: Glass price, name: glassprice, widget: number, valueType: int, required: false}
-      - label: White wines
+      - label: "White wines"
         name: whitewines"
         file: "data/files/whitewines.yml"
         widget: list
         fields:
-          - label: White wines
-            name: white
+          - label: "White wines"
+            name: "whitewines"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
@@ -54,8 +54,8 @@ collections:
         file: "data/files/otherwines.yml"
         widget: list
         fields:
-          - label: Other wines
-            name: other
+          - label: "Other wines"
+            name: "otherwines"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
