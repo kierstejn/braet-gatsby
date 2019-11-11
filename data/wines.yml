@@ -1,3 +1,6 @@
 wines:
-  - name: Cabernet sauvignon
-    position: France
+  - bottleprice: 400
+    description: God vin fra frankrig
+    glassprice: 33
+    name: Pinot noir
+    winetype: White
