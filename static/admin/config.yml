@@ -21,10 +21,11 @@ collections:
   - label: "Menu"
     name: "menu"
     delete: false
+    
     files:
-      - label: "Wines"
-        name: "wines"
-        file: "data/files/wines.yml"
+      - label: "Red wines"
+        name: "redwines"
+        file: "data/files/redwines.yml"
         widget: list
         fields:
           - label: Wines
@@ -35,7 +36,32 @@ collections:
               - {label: Description, name: description, widget: string, required: false}
               - {label: Bottle price, name: bottleprice, widget: number, valueType: int}
               - {label: Glass price, name: glassprice, widget: number, valueType: int, required: false}
-              - {label: "Wine type", name: "winetype", widget: "select", options: ["Red", "White", "Other"]}
+      - label: "White wines"
+        name: "whitewines"
+        file: "data/files/whitewines.yml"
+        widget: list
+        fields:
+          - label: Wines
+            name: wines
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Description, name: description, widget: string, required: false}
+              - {label: Bottle price, name: bottleprice, widget: number, valueType: int}
+              - {label: Glass price, name: glassprice, widget: number, valueType: int, required: false}
+      - label: "Other wines"
+        name: "otherwines"
+        file: "data/files/otherwines.yml"
+        widget: list
+        fields:
+          - label: Wines
+            name: wines
+            widget: list
+            fields:
+              - {label: Name, name: name, widget: string}
+              - {label: Description, name: description, widget: string, required: false}
+              - {label: Bottle price, name: bottleprice, widget: number, valueType: int}
+              - {label: Glass price, name: glassprice, widget: number, valueType: int, required: false}
 
           
       
