@@ -28,8 +28,8 @@ collections:
         file: "data/files/redwines.yml"
         widget: list
         fields:
-          - label: Wines
-            name: wines
+          - label: "Red wines"
+            name: "redwines"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
@@ -41,8 +41,8 @@ collections:
         file: "data/files/whitewines.yml"
         widget: list
         fields:
-          - label: Wines
-            name: wines
+          - label: White wines
+            name: whitewines
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
@@ -54,8 +54,8 @@ collections:
         file: "data/files/otherwines.yml"
         widget: list
         fields:
-          - label: Wines
-            name: wines
+          - label: "Other wines"
+            name: "otherwines"
             widget: list
             fields:
               - {label: Name, name: name, widget: string}
