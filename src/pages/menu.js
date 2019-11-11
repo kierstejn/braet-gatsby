@@ -16,7 +16,7 @@ const menu = ( {data} ) => {
                 <p>Gode drikkevarer</p>
             </div>
             <div label={"Vin"}>
-                {data.red.nodes.length !== 0 && 
+                {/* {data.red.nodes.length !== 0 && 
                     <MenuItemList 
                         header={"RØD"}
                     >
@@ -61,50 +61,50 @@ const menu = ( {data} ) => {
                                     bottlePrice={item.bottleprice && item.bottleprice}
                                 />
                             )
-                        })}
-                    </MenuItemList>
+                        })} */}
+                    {/* </MenuItemList> */}
                 }
             </div>
         </Tabs>
     </div>)
 };
 
-export const redWineQuery = graphql`
-    query redWineQueryery {
-        red: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "Red"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
-            nodes {
-              wines {
-                bottleprice
-                description
-                glassprice
-                name
-                winetype
-              }
-            }
-          }
-          white: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "White"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
-            nodes {
-              wines {
-                bottleprice
-                description
-                glassprice
-                name
-                winetype
-              }
-            }
-          }
-          other: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "Other"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
-            nodes {
-              wines {
-                bottleprice
-                description
-                glassprice
-                name
-                winetype
-              }
-            }
-          }
-    }`
+// export const redWineQuery = graphql`
+//     query redWineQueryery {
+//         red: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "redwines"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+//             nodes {
+//               wines {
+//                 bottleprice
+//                 description
+//                 glassprice
+//                 name
+//                 winetype
+//               }
+//             }
+//           }
+//           white: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "whitewines"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+//             nodes {
+//               wines {
+//                 bottleprice
+//                 description
+//                 glassprice
+//                 name
+//                 winetype
+//               }
+//             }
+//           }
+//           other: allFilesYaml(filter: {wines: {elemMatch: {winetype: {eq: "otherwines"}}}}, sort: {fields: wines___bottleprice, order: ASC}) {
+//             nodes {
+//               wines {
+//                 bottleprice
+//                 description
+//                 glassprice
+//                 name
+//                 winetype
+//               }
+//             }
+//           }
+//     }`
 
 
 

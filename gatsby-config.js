@@ -12,6 +12,7 @@ module.exports = {
     `gatsby-transformer-json`,
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    `gatsby-transformer-yaml`,
     {
       resolve: `gatsby-source-filesystem`,
       options: {
@@ -20,13 +21,8 @@ module.exports = {
      
     },
 
-    `gatsby-transformer-yaml`,
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
-        path: `${__dirname}/data/files/`,
-      },
-    },
+    
+    
     
     {
       resolve: 'gatsby-plugin-web-font-loader',
