@@ -4,3 +4,8 @@ wines:
     glassprice: 33
     name: Pinot noir
     winetype: White
+  - bottleprice: 400
+    description: Lys og fin med noter af røde bær
+    glassprice: 35
+    name: Primotivo
+    winetype: Red
