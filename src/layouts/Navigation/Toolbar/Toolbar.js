@@ -10,7 +10,7 @@ const toolbar = ( props ) => (
     <header className={styles.Toolbar}>
 			<div className={styles.Toolbar__Image}>
 				<Link to={"/"}>
-					<h1>Breat</h1>
+					<h1>Braet</h1>
 				</Link>
 			</div>
 			<nav className={styles.NavigationItems}>

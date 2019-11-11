@@ -24,8 +24,8 @@ export default ( props ) => {
   return (
     <div>
         <div className={styles.Header}>
-            <h1><span className={styles.Name}>Breat</span> - kbh's nye brætspils cafe</h1>
-            <h3>Kom ind til en kop kaffe, et glas vin eller en slag brætspil</h3>
+            <h1><span className={styles.Name}>Braet</span> - kbh's nye brætspils cafe</h1>
+            <h3>Kom ind til en kop kaffe, et glas vin eller et slag brætspil</h3>
 
         </div>
         <div className={styles.Image}>

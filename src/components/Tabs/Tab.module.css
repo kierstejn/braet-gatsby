@@ -1,0 +1,20 @@
+  .tabList {
+    margin: 0 auto;
+    width: fit-content;
+    padding: 0;
+  }
+  
+  .tabListItem {
+    display: inline-block;
+    padding: 0.5rem 0.75rem;
+  }
+  
+  .tabListActive {
+    background-color: white;
+    text-decoration: underline;
+  }
+
+  .Content {
+      margin-top: 2em;
+      text-align: center;
+  }

@@ -1,0 +1,11 @@
+.Container {
+    margin-bottom: 3em;
+}
+
+.Header {
+    
+}
+
+.Content > * {
+    margin-top: 1.2em;
+}

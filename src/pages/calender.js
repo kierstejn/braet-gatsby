@@ -4,11 +4,6 @@ import EventList from '../components/EventList/EventList';
 import * as styles from './pageStyles/calender.module.css';
 
 const calender = ({data, pageContext}) => {
-
-    
-    
-    console.log(data)
-    console.log(pageContext)
     let events = [];
     events = data.allEventsJson && data.allEventsJson.edges.map(item => {
         return {

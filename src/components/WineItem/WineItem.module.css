@@ -1,0 +1,19 @@
+.Header {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.Container > :last-child {
+    margin-bottom: 0.2em;
+    margin-top: 0.5em;
+}
+
+.Price {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+}
+
+.PriceDivider {
+    margin: 0 0.3em
+}

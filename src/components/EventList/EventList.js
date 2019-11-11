@@ -1,8 +1,5 @@
 import React, { Fragment } from 'react';
 import { graphql } from "gatsby";
-import { Card } from '@material-ui/core';
-import Moment from 'react-moment';
-import 'moment/locale/fr';
 
 import * as styles from './EventList.module.css';
 
@@ -16,9 +13,6 @@ const eventlist = (props) => {
         console.log(new Date(item.date))
         return Date(item.date) > Date.now()
     })
-    console.log(events)
-    
-    console.log(Date.now())
     return (
         <div className={styles.EventList}>
             <h2 className={styles.EventListHeader}>EVENTS</h2>
@@ -44,7 +38,7 @@ const eventlist = (props) => {
                                         
                                     </div>
                                     {item.link ? 
-                                        <a className={styles.EventItemLink} href={item.link}>Mere info</a>
+                                        <a className={styles.EventItemLink} href={item.link}><p>Mere info</p></a>
                                         : null
                                     }
                                 </div>
